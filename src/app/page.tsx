@@ -14,15 +14,15 @@ export async function generateMetadata(paramKey: any){
         },
       })
   return {
-    title: movie?.data().title,
-    description: movie?.data().overview,
+    title: movie?.data?.title,
+    description: movie?.data?.overview,
     other: {
       'theme-color': '#0d1117',
       "color-scheme": "light only",
-      "twitter:image": `https://image.tmdb.org/t/p/w500/${movie?.data().poster_path}`,
+      "twitter:image": `https://image.tmdb.org/t/p/w500/${movie?.data?.poster_path}`,
       "twitter:card": "summary_large_image",
       "og:url": "oumat-iqraa.com",
-      "og:image": `https://image.tmdb.org/t/p/w500/${movie?.data().poster_path}`,
+      "og:image": `https://image.tmdb.org/t/p/w500/${movie?.data?.poster_path}`,
       "og:type": "website",
     }
     }
