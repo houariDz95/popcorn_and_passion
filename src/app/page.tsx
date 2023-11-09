@@ -12,20 +12,20 @@ export async function generateMetadata(paramKey: any){
         },
       })
   return {
-    title: movie?.data?.title,
-    description: movie?.data?.overview,
+    title: movie?.data.results[0].title,
+    description: movie?.data.results[0].overview,
     other: {
       'theme-color': '#0d1117',
       "color-scheme": "light only",
-      "twitter:image": `https://image.tmdb.org/t/p/w500/${movie?.data?.poster_path}`,
+      "twitter:image": `https://image.tmdb.org/t/p/w500/${movie?.data.results[0].poster_path}`,
       "twitter:card": "summary_large_image",
       "og:url": "oumat-iqraa.com",
-      "og:image": `https://image.tmdb.org/t/p/w500/${movie?.data?.poster_path}`,
+      "og:image": `https://image.tmdb.org/t/p/w500/${movie?.data.results[0].poster_path}`,
       "og:type": "website",
     }
     }
 }
 
-export default function HomePage() {
+export default async function HomePage() {
   return <Home />;
 }
