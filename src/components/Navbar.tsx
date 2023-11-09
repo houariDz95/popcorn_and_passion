@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="bg-primary py-4 px-4 md:px-0">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
-          <div className="text-[30px] font-medium">Logo</div>
+          <div className="text-[30px] font-medium">Popcorn&Passion</div>
         </Link>
 
         <form onSubmit={searchMovie}>

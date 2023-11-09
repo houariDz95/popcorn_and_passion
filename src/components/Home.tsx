@@ -5,11 +5,13 @@ import Image from "next/image";
 import { useSearchParams, useRouter } from "next/navigation";
 import axios from "axios";
 import Genres from "./Genres";
-
 import { BsPlayFill } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
 import {FiDownload} from "react-icons/fi"
 import dynamic from "next/dynamic";
+import BannerSq from "../../banners/Banner_250_300";
+import Link from "next/link";
+import Script from "next/script";
 
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
@@ -88,7 +90,7 @@ const Home = () => {
 
       <div className="container mx-auto min-h-[calc(100vh-77px)] flex items-center relative">
         <div className="flex-col lg:flex-row flex gap-10 lg:mx-10 py-20">
-          <div className="mx-auto flex-none relative">
+          <div className="mx-auto flex-none relative h-fit">
             <Image
               src={`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`}
               width={700}
@@ -137,13 +139,17 @@ const Home = () => {
                 <BsPlayFill size={24} />
                 Watch Trailer
               </div>
-              <div className="flex gap-2 items-center bg-green-500 text-white px-4 py-2 mb-6 hover:bg-green-400"
-              onClick={() => router.push('https://zaltaumi.net/4/6556290')}
+              <Link 
+              href='https://zaltaumi.net/4/6556290' 
+              target="_blanc" 
+              className="flex gap-2 items-center bg-green-500 text-white px-4 py-2 mb-6 hover:bg-green-400"
               >
                 <FiDownload size={24} />
                 Download 
-              </div>
+              </Link>
             </div>
+            <BannerSq />
+
           </div>
         </div>
 
@@ -174,6 +180,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Script type='text/javascript' src='//pl21292525.toprevenuegate.com/6d/e1/2e/6de12e76feed136d2281569a7f196436.js' />
     </div>
   );
 };
