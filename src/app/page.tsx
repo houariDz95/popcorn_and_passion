@@ -2,10 +2,8 @@ import Home from "@/components/Home";
 import axios from "axios";
 
 export async function generateMetadata(paramKey: any){
-  let searchMovie = paramKey.searchParams.movie || null;
-  if (searchMovie === null) {
-    searchMovie = "avengers";
-  }
+  let searchMovie = paramKey.searchParams.movie || "avengers";
+
   const movie = await axios
   .get(`https://api.themoviedb.org/3/search/movie`, {
         params: {
