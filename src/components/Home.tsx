@@ -140,7 +140,7 @@ const Home = () => {
                 Watch Trailer
               </div>
               <Link 
-              href='https://www.toprevenuegate.com/zx6m4jtj?key=cff8d3938d29f82cb71f68f898db5788' 
+              href='https://meenetiy.com/4/6583691' 
               target="_blanc" 
               className="flex gap-2 items-center bg-green-500 text-white px-4 py-2 mb-6 hover:bg-green-400"
               >
