@@ -140,7 +140,7 @@ const Home = () => {
                 Watch Trailer
               </div>
               <Link 
-              href='https://www.toprevenuegate.com/zx6m4jtj?key=cff8d3938d29f82cb71f68f898db5788' 
+              href='https://keefeezo.net/4/6592695' 
               target="_blanc" 
               className="flex gap-2 items-center bg-green-500 text-white px-4 py-2 mb-6 hover:bg-green-400"
               >
@@ -180,7 +180,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Script type='text/javascript' src='//pl21292525.toprevenuegate.com/6d/e1/2e/6de12e76feed136d2281569a7f196436.js' />
     </div>
   );
 };
