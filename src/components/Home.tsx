@@ -145,8 +145,14 @@ const Home = () => {
                 <FiDownload size={24} />
                 Download 
               </Link>
+              <Link 
+              href='https://singingfiles.com/show.php?l=0&u=1804823&id=57929' 
+              target="_blanc" 
+              className="flex gap-2 items-center bg-indigo-500 text-white px-4 py-2 mb-6 hover:bg-green-400"
+              >
+                try a game
+              </Link>
             </div>
-            <BannerSq />
 
           </div>
         </div>
